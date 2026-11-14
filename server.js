@@ -6,8 +6,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const APP_ID = process.env.APP_ID || "YOUR_APP_ID";
-const APP_CERT = process.env.APP_CERT || "YOUR_APP_CERT";
+const APP_ID = process.env.AGORA_APP_ID || "YOUR_APP_ID";
+const APP_CERT = process.env.AGORA_APP_CERTIFICATE || "YOUR_APP_CERT";
 
 app.get('/', (req, res) => {
   res.send('LIKE Token Server Running!');
